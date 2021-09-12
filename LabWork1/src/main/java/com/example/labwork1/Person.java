@@ -15,6 +15,6 @@ public class Person {
 
     public String CallYourPet(){
         String petVoice = pet.Say();
-        return String.format(" - Hey, %s, come here! \n - %s", pet.getClass(), pet.Say());
+        return String.format(" - Эй, ко мне! \n - %s", pet.Say());
     }
 }

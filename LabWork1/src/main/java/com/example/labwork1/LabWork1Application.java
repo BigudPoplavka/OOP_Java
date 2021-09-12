@@ -32,6 +32,8 @@ public class LabWork1Application {
 
     @GetMapping("/options")
     public String GetOptions(@RequestParam(value = "Option", defaultValue = "Option") String option){
-        return option;
+        if(option != null)
+            return "Not an option";
+        return "Option";
     }
 }
